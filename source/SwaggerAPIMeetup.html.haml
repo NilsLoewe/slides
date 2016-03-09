@@ -1,0 +1,42 @@
+---
+title: Lightning Talk - Bath Ruby Conference 2016
+layout: slide
+---
+
+%section{"data-markdown" => ""}
+  \# Page title
+
+  A paragraph with some text and a [link](http://hakim.se).
+
+%section
+  %pre
+    %code{"data-noescape" => "", "data-trim" => ""}
+      def lazy-fib
+      (concat
+      [0 1]
+      %mark ((fn rfib [a b]
+      (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+
+%section
+  First Slide
+
+%section
+  Second Slide
+  Blubb
+  Bla
+
+%section
+  Second Slide
+  Blubb
+  Bla
+
+%section
+  Second Slide
+  Blubb
+  Bla
+
+%section
+  %ul
+    %li Second Slide
+    %li Blubb
+    %li Bla
