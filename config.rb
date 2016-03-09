@@ -18,7 +18,7 @@ activate :deploy do |deploy|
   deploy.deploy_method   = :sftp
   deploy.host            = 'nils-loewe.de'
   deploy.port            = 22
-  deploy.path            = '/var/www/ai2016.nils-loewe.de'
+  deploy.path            = '/var/www/slides.nils-loewe.de'
   deploy.flags           = '-avz --chown=www-data:www-data'
   deploy.user            = 'nils'
 end
