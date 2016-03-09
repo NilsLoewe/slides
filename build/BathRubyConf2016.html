@@ -2,13 +2,14 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8'>
-<title>Vorlesung X</title>
+<title>Lightning Talk - Bath Ruby Conference 2016</title>
 <meta content='Nils Löwe' name='author'>
 <meta content='yes' name='apple-mobile-web-app-capable'>
 <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui' name='viewport'>
 <link href='css/reveal.css' rel='stylesheet'>
-<link href='css/theme/black.css' id='theme' rel='stylesheet'>
+<link href='css/ai.css' rel='stylesheet'>
+<link href='css/theme/night.css' id='theme' rel='stylesheet'>
 <!-- Code syntax highlighting -->
 <link href='lib/css/zenburn.css' rel='stylesheet'>
 <!-- Printing and PDF exports -->
@@ -26,6 +27,17 @@
 <body>
 <div class='reveal'>
 <div class='slides'>
+<section data-markdown=''>
+# Page title
+A paragraph with some text and a [link](http://hakim.se).
+</section>
+<section>
+<pre><code data-noescape='' data-trim=''>def lazy-fib
+(concat
+[0 1]
+<mark>((fn rfib [a b]</mark>
+(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))</code></pre>
+</section>
 <section>
 First Slide
 </section>
@@ -51,6 +63,7 @@ Bla
 <li>Bla</li>
 </ul>
 </section>
+
 
 </div>
 </div>
