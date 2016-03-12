@@ -11,3 +11,8 @@
   bottom: 0;
   font-size: 14px !important;
 }
+
+.reveal .slide ul
+{
+    list-style-type: none;
+}

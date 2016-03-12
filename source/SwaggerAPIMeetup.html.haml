@@ -1,42 +1,84 @@
 ---
-title: Lightning Talk - Bath Ruby Conference 2016
+title: Introduction to Swagger - Web API Meetup
 layout: slide
 ---
 
 %section{"data-markdown" => ""}
-  \# Page title
+  \## Introduction to Swagger
+  %br
+  \#### 15.03.16 / Web API Meetup / Wer liefert Was?
+  %br
+  [@NilsLoewe](https://twitter.com/NilsLoewe)
 
-  A paragraph with some text and a [link](http://hakim.se).
+%section{"data-markdown" => ""}
+  \## What is Swagger?
+
+%section{"data-markdown" => ""}
+  \### Swagger is a representation for REST APIs:
+
+  * Interactive documentation
+  * Client SDK generation
+  * Discoverability
+  * Supporting many programming languages and environments
+  * 100% Open Source
+
+%section{"data-markdown" => ""}
+  \### What's Open Source in this case?
+
+%section{"data-markdown" => ""}
+
+  \#### 2011-08-10: First release of the Swagger Specification
+
+  To bring the “good parts” of REST, SOAP, Web Services and RPC into a simple, easy to understand format.
+
+%section{"data-markdown" => ""}
+  \#### 2014-09-08:	Release of Swagger 2.0
+
+  Swagger tools are downloaded close to 15,000 times per day.
+  %br
+  2000 known open-source repositories for Swagger tools
+  %br
+  First-class support across all major API management platforms.
+
+%section{"data-markdown" => ""}
+
+  \#### 2016-01-01 The Open API Initiative
+
+  \### Part of the Linux Foundation
+  %br
+  *Founding partners: Google, Microsoft, IBM, 3Scale, Apigee, CapitalOne, Intuit, PayPal, and Restlet.*
+  %br
+  [openapis.org](https://openapis.org)
+
+%section{"data-markdown" => ""}
+  ![](/images/oai.png)
+
+%section{"data-markdown" => ""}
+  \### Describing APIs in Swagger
 
 %section
+  %h4 A 'hello world' API
   %pre
-    %code{"data-noescape" => "", "data-trim" => ""}
-      def lazy-fib
-      (concat
-      [0 1]
-      %mark ((fn rfib [a b]
-      (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-
-%section
-  First Slide
-
-%section
-  Second Slide
-  Blubb
-  Bla
-
-%section
-  Second Slide
-  Blubb
-  Bla
-
-%section
-  Second Slide
-  Blubb
-  Bla
-
-%section
-  %ul
-    %li Second Slide
-    %li Blubb
-    %li Bla
+    %code
+      :preserve
+        swagger: "2.0"
+        info:
+          version: "1.0"
+          title: "Hello World API"
+        paths:
+          /hello/{user}:
+            get:
+              description: Returns a greeting to the user!
+              parameters:
+                - name: user
+                  in: path
+                  type: string
+                  required: true
+                  description: The name of the user to greet.
+              responses:
+                200:
+                  description: Returns the greeting.
+                  schema:
+                    type: string
+                400:
+                  description: Invalid characters in "user" were provided.
