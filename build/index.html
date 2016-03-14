@@ -4,15 +4,69 @@
 <meta content='IE=edge' http-equiv='X-UA-Compatible'>
 <meta charset='utf-8'>
 <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
-
 <!-- Use title if it's in the page YAML frontmatter -->
 <title>Slides / Nils Löwe</title>
 <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href='css/bootstrap.min.css' rel='stylesheet'>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
 <link href="/stylesheets/all.css" rel="stylesheet" />
 <script src="/javascripts/main.js"></script>
-<link href='css/bootstrap.min.css' rel='stylesheet'>
+<script src="/javascripts/verify.notify.min.js"></script>
+<script>
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:300,400,700:latin', 'Lato:700,900:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
 </head>
 <body>
+<header class='header push-down-45'>
+<div class='container'>
+<!-- .logo.pull-left -->
+<!-- %a{:href => "index.html"} -->
+<!-- %img{:alt => "Logo", :src => "images/logo.png"}/ -->
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class='navbar-header'>
+<button class='navbar-toggle' data-target='#readable-navbar-collapse' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+</div>
+<nav class='navbar navbar-default' role='navigation'>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class='collapse navbar-collapse' id='readable-navbar-collapse'>
+<ul class='navigation'>
+<li class='active'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='https://nils-loewe.de/index.html'>Home</a>
+</li>
+<li>
+<a class='dropdown-toggle' data-toggle='dropdown' href='https://nils-loewe.de/blog.html'>Blog</a>
+</li>
+<li>
+<a class='dropdown-toggle' data-toggle='dropdown' href='https://nils-loewe.de/profil.html'>Über mich</a>
+</li>
+<li>
+<a class='dropdown-toggle' data-toggle='dropdown' href='https://nils-loewe.de/angebot.html'>Arbeite mit mir</a>
+</li>
+<li>
+<a class='dropdown-toggle' data-toggle='dropdown' href='https://nils-loewe.de/contact.html'>Kontakt</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+</header>
 
 <div class='container'>
 <div class='row'>
@@ -20,9 +74,9 @@
 <div class='boxed push-down-45'>
 <div class='row'>
 <div class='col-xs-12 col-sm-10 col-sm-offset-1'>
-<h1>Slides</h1>
+<div class='slides-box'>
+<h2>Slides</h2>
 <table class='table table-striped'>
-<caption>Slides</caption>
 <thead>
 <tr>
 <th>Date</th>
@@ -32,7 +86,7 @@
 <tbody>
 <tr>
 <td>15.03.16</td>
-<td><a href="/SwaggerAPIMeetup.html">"Swagger" @ Web API Meetup, Hamburg</a></td>
+<td><a href="/SwaggerAPIMeetup.html">"Introduction to Swagger" @ Web API Meetup, Hamburg</a></td>
 </tr>
 <tr>
 <td>11.03.16</td>
@@ -47,7 +101,101 @@
 </div>
 </div>
 </div>
+</div>
+<footer class='footer navbar navbar-default navbar-fixed-bottom'>
+<div class='container'>
+<div class='col-xs-12 col-md-4 hidden-xs'>
+<div class='tags widget-tags'>
+<h6>Weitere Profile</h6>
+<hr>
+<br>
+<div class='social-icons widget-social-icons'>
+<a class='social-icons__container' href='https://twitter.com/NilsLoewe' target='_blank'>
+<span class='zocial-twitter'></span>
+</a>
+<a class='social-icons__container' href='https://www.xing.com/profile/Nils_Loewe2' target='_blank'>
+<span class='zocial-xing'></span>
+</a>
+<a class='social-icons__container' href='https://de.linkedin.com/in/nilsloewe' target='_blank'>
+<span class='zocial-linkedin'></span>
+</a>
+<a class='social-icons__container' href='https://github.com/in/NilsLoewe' target='_blank'>
+<span class='zocial-github'></span>
+</a>
+<a class='social-icons__container' href='http://feeds.feedburner.com/NilsLoewe'>
+<span class='zocial-rss'></span>
+</a>
+</div>
+</div>
+</div>
+<div class='col-xs-12 col-md-4'>
+<nav class='widget-navigation push-down-30'>
+<h6>Imressum & co.</h6>
+<hr>
+<ul class='navigation'>
+<li>
+<a href='https://nils-loewe.de/impressum.html'>Impressum</a>
+</li>
+<li>
+<a href='https://nils-loewe.de/datenschutz.html'>Datenschutzerklärung</a>
+</li>
+<li>
+<a href='https://nils-loewe.de/contact.html'>Kontakt</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class='col-xs-12 col-md-4 hidden-xs'>
+<div class='widget-contact push-down-30'>
+<h6>Kontakt</h6>
+<hr>
+<span class='widget-contact__text'>
+<span class='widget-contact__title'>Nils Löwe</span>
+<br>
+Erwin-König-Weg 5,
+<br>
+21075 Hamburg
+<br>
+Deutschland
+</span>
+</div>
+</div>
+</div>
+</footer>
 
+<!-- Piwik -->
+<script>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.loewe.io/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 4]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+<p>
+<img alt='' src='//stats.loewe.io/piwik.php?idsite=4' style='border:0;'>
+</p>
+</noscript>
+<!-- End Piwik -->
+<!-- Piwik Image Tracker -->
+<img alt='' src='http://stats.loewe.io/piwik.php?idsite=4&amp;rec=1' style='border:0'>
+<!-- End Piwik -->
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-51095775-5', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google -->
 
 </body>
 </html>
