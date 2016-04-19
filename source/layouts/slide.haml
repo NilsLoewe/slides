@@ -13,6 +13,14 @@
     %link{:href => "lib/css/zenburn.css", :rel => "stylesheet"}/
     %link{:href => "css/slides.css", :rel => "stylesheet"}/
     / Printing and PDF exports
+    %link{:href => "lib/css/zenburn.css", :rel => "stylesheet"}/
+    :javascript
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/css/theme/simple.css' : 'css/theme/night.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    / Printing and PDF exports
     :javascript
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
