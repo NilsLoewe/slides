@@ -70,10 +70,70 @@ layout: slide
   \#### IST-Stand der Plattform
   \### Challenge Funktionen
 
+  * Übersicht der Challenges anschauen
+  * Briefing einer Challenge ansehen
+  * Ideen zu einer Challenge sehen
+  * Eine Idee ansehen
+
 %section{"data-markdown" => ""}
 
   \#### IST-Stand der Plattform
-  \### Link-Tracking
+  \### Challenge Funktionen: (Backend)
+
+  * Challenge erstellen
+  * Challenge editieren
+  * Phase starten/beenden
+  * Challenge löschen
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Challenge Funktionen: Eine Challenge
+
+  * Beschreibung
+  * Fotos
+  * Anhänge
+  * Preisgeld
+  * Laufzeit
+  * Phase
+  * Anzahl Ideen
+  * --> Ideen
+  * Neue Idee einreichen
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Challenge Funktionen: Eine Idee
+
+  * Beschreibung
+  * Anhänge
+  * --> Kommentare
+  * Likes
+  * Rankings
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Challenge Funktionen: Phasen
+
+  * **Erstellt**
+  * --> 4 Daten: Start challenge, Ende Brainstorming, Start Evaluation, Ende Challenge
+
+  * **Brainstorming**
+  * --> Ideen einreichen
+  * --> Kommentare schreiben
+  * --> Likes abgeben
+
+  * **Evaluation**
+  * --> Ratings abgeben
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Link-Tracking (Backend)
+
+  * Short-URL generieren (Ziel, titel)
+  * Übersicht logins/signups pro short-url
 
 %section{"data-markdown" => ""}
 
@@ -142,31 +202,114 @@ layout: slide
   * User löschen
   * Rollen zuweisen
 
+
 %section{"data-markdown" => ""}
 
   \#### ZIEL-Stand der Plattform
   \### Challenge Funktionen
 
+  * Übersicht der Challenges anschauen
+  * Briefing einer Challenge ansehen
+  * Ideen zu einer Challenge sehen
+  * Eine Idee ansehen
+  * **Challenge Ideen-Übersicht filtern, sortieren und paginieren**
+  * **Übersicht nur anzeigen, wenn mehr als eine Challenge existiert**
+  * **Übersicht als Liste und als Kachelansicht**
+
 %section{"data-markdown" => ""}
 
   \#### ZIEL-Stand der Plattform
-  \### Link-Tracking
+  \### Challenge Funktionen: (Backend)
+
+  * Challenge erstellen
+  * Challenge editieren
+  * Challenge löschen
+  * Phase starten/beenden **& Autostart der Phasen**
+  * **Eine Auswertung exportieren: Anzahl Ideen, Kommentare, Teilnehmer, neue User**
+  * **User-Auswertung für challenge: Altersverteilung, m/w, Punkte, ...**
+
+%section{"data-markdown" => ""}
+
+  \#### ZIEL-Stand der Plattform
+  \### Challenge Funktionen: Eine Challenge
+
+  * Beschreibung
+  * Fotos
+  * Anhänge
+  * Preisgeld
+  * Laufzeit
+  * Phase
+  * Anzahl Ideen
+  * --> Ideen
+  * Neue Idee einreichen
+
+%section{"data-markdown" => ""}
+
+  \#### ZIEL-Stand der Plattform
+  \### Challenge Funktionen: Eine Idee
+
+  * Beschreibung
+  * Anhänge
+  * --> Kommentare
+  * Likes
+  * Rankings
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Challenge Funktionen: Phasen
+
+  * **Erstellt**
+  * --> 4 Daten: Start challenge, Ende Brainstorming, Start Evaluation, Ende Challenge
+  * --> **Ende Brainstorming == Start Evaluation**
+  * --> **Automatischer Übergang der Phasen**
+
+  * **Brainstorming**
+  * --> Ideen einreichen
+  * --> Kommentare schreiben
+  * --> Likes abgeben
+
+  * **Evaluation**
+  * --> Ratings abgeben
+
+%section{"data-markdown" => ""}
+
+  \#### IST-Stand der Plattform
+  \### Link-Tracking (Backend)
+
+  * Short-URL generieren (Ziel, titel)
+  * Übersicht logins/signups pro short-url
 
 %section{"data-markdown" => ""}
 
   \#### ZIEL-Stand der Plattform
   \### Whitelabel Funktionen
 
+  Challenges werden durchgeführt auf
+
+  * phantominds.com
+  * kunde.phantominds.com ("simple whitelabel")
+  * xyz.kunde.com ("external whitelabel")
 
 %section{"data-markdown" => ""}
 
-  ![](/images/phantominds/plattform.jpg)
+  \#### ZIEL-Stand der Plattform
+  \### "simple" Whitelabel Funktionen
 
-%section
-  %h5 Ist-Stand der Plattform
-  %h4 User-Funktionen
-  %pre
-    %code
-      :preserve
-        swagger: "2.0"
-        info:
+  * Alle bestehenenden phantominds-user nehmen teil
+  * Neue User werden später zur community zugefügt
+  * Nur die whitelabel-challenge sichtbar
+  * Direkter Einstieg in die challenge
+  * Mails werden von xyz@phantominds.com gesendet
+
+%section{"data-markdown" => ""}
+
+  \#### ZIEL-Stand der Plattform
+  \### "external" Whitelabel Funktionen
+
+  \#### Alle Funktionen der "simple" Lösung, zusätzlich:textile
+
+  * Keine synchronisation der User in irgendeine Richtung
+  * Emails laufen über Kunden-Server
+  * DNS Konfiguration muss beim Kunden passieren
+  * Angepasstes Design/Layout der Startseite
