@@ -1,42 +1,19 @@
-%footer.footer.navbar.navbar-default.navbar-fixed-bottom
-  .container
-    .col-xs-12.col-md-4.hidden-xs
-      .tags.widget-tags
-        %h6 Weitere Profile
-        %hr/
-        %br/
-        .social-icons.widget-social-icons
-          %a.social-icons__container{:href => "https://twitter.com/NilsLoewe", :target => "_blank"}
-            %span.zocial-twitter
-          %a.social-icons__container{:href => "https://www.xing.com/profile/Nils_Loewe2", :target => "_blank"}
-            %span.zocial-xing
-          %a.social-icons__container{:href => "https://de.linkedin.com/in/nilsloewe", :target => "_blank"}
-            %span.zocial-linkedin
-          %a.social-icons__container{:href => "https://github.com/in/NilsLoewe", :target => "_blank"}
-            %span.zocial-github
-          %a.social-icons__container{:href => "http://feeds.feedburner.com/NilsLoewe"}
-            %span.zocial-rss
-
-    .col-xs-12.col-md-4
-      %nav.widget-navigation.push-down-30
-        %h6 Imressum & co.
-        %hr/
-        %ul.navigation
-          %li
-            %a{:href => "https://nils-loewe.de/impressum"} Impressum
-          %li
-            %a{:href => "https://nils-loewe.de/datenschutz"} Datenschutzerklärung
-          %li
-            %a{:href => "https://nils-loewe.de/contact"} Kontakt
-    .col-xs-12.col-md-4.hidden-xs
-      .widget-contact.push-down-30
-        %h6 Kontakt
-        %hr/
-        %span.widget-contact__text
-          %span.widget-contact__title Nils Löwe
-          %br/
-          Erwin-König-Weg 5,
-          %br/
-          21075 Hamburg
-          %br/
-          Deutschland
+.container
+  %footer.footer
+    .row
+      .col-xs-12
+        .col-xs-12.col-md-4
+          %nav.widget-navigation
+            %ul.navigation
+              %li
+                %a{:href => "https://nils-loewe.de/impressum"} Impressum
+        .col-xs-12.col-md-4
+          %nav.widget-navigation
+            %ul.navigation
+              %li
+                %a{:href => "https://nils-loewe.de/datenschutz"} Datenschutzerklärung
+        .col-xs-12.col-md-4
+          %nav.widget-navigation
+            %ul.navigation
+              %li
+                %a{:href => "https://nils-loewe.de/contact"} Kontakt
