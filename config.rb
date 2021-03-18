@@ -1,7 +1,7 @@
 # Page options, layouts, aliases and proxies
 
 set :markdown_engine, :redcarpet
-set :haml, { :ugly => true, :format => :html5 }
+set :haml, { :format => :html5 }
 
 # Per-page layout changes:
 page '/*.xml', layout: false

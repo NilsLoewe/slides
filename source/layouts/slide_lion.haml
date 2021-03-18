@@ -8,17 +8,17 @@
     %meta{:content => "black-translucent", :name => "apple-mobile-web-app-status-bar-style"}/
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui", :name => "viewport"}/
     %link{:href => "css/reveal.css", :rel => "stylesheet"}/
-    %link#theme{:href => "css/theme/night.css", :rel => "stylesheet"}/
+    %link#theme{:href => "css/theme/simple.css", :rel => "stylesheet"}/
     / Code syntax highlighting
     %link{:href => "lib/css/zenburn.css", :rel => "stylesheet"}/
-    %link{:href => "css/slides.css", :rel => "stylesheet"}/
+    %link{:href => "css/slides-lion.css", :rel => "stylesheet"}/
     / Printing and PDF exports
     %link{:href => "lib/css/zenburn.css", :rel => "stylesheet"}/
     :javascript
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/css/theme/simple.css' : 'css/theme/night.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/css/theme/simple.css' : 'css/theme/simple.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     / Printing and PDF exports
     :javascript
