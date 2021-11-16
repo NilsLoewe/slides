@@ -27,7 +27,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.8)
     contracts (0.13.0)
-    date (3.0.0)
+    date (3.2.1)
     delegate (0.1.0)
     did_you_mean (1.4.0)
     dotenv (2.7.6)
@@ -133,7 +133,7 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.0.0)
   cgi (~> 0.1.0)
-  date (~> 3.0.0)
+  date (~> 3.2.1)
   delegate (~> 0.1.0)
   did_you_mean (~> 1.4.0)
   etc (~> 1.1.0)
