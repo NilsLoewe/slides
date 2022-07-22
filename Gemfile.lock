@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/middleman-contrib/middleman-deploy.git
+  remote: https://github.com/middleman-contrib/middleman-deploy.git
   revision: 4d04b550b4c6888265d83ee9689f41e29dbae535
   branch: master
   specs:
@@ -120,7 +120,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     timeout (0.1.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
