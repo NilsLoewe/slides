@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/middleman-contrib/middleman-deploy.git
+  remote: https://github.com/middleman-contrib/middleman-deploy.git
   revision: 4d04b550b4c6888265d83ee9689f41e29dbae535
   branch: master
   specs:
@@ -16,8 +16,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     backports (3.20.2)
     builder (3.0.4)
     cgi (0.1.0)
@@ -103,7 +103,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.20.1)
     ptools (1.4.2)
-    public_suffix (4.0.6)
+    public_suffix (5.0.0)
     rack (2.2.3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
