@@ -17,7 +17,7 @@ gem 'stringio', '~>0.1.0'
 gem 'date', '~>3.0.0'
 gem 'ipaddr', '~>1.2.2'
 gem 'openssl', '~>2.1.2'
-gem 'cgi', '~>0.1.0'
+gem 'cgi', '~>0.3.5'
 gem 'strscan', '~>1.0.3'
 gem 'forwardable', '~>1.3.1'
 
